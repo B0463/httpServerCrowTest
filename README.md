@@ -9,7 +9,7 @@ Maybe this repository will inspire you to explore C++ for your web development n
 ## How to Run
 
 1. **Install the dependencies**  
-    You’ll need Crow, Asio, Make, and g++ installed on your system.
+   You’ll need [Crow](https://github.com/CrowCpp/Crow), [Asio](https://think-async.com/Asio/), [Make](https://www.gnu.org/software/make/), and [g++](https://gcc.gnu.org/) installed on your system.
 
 2. **Compile the project**
 
