@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>httpServerCrowTest</title>
+        <style>
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 2em;
+                line-height: 1.6;
+            }
+
+            a {
+                color: #80cbc4;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            h1, h2, h3 {
+                color: #ffffff;
+            }
+
+            pre {
+                background-color: #1e1e1e;
+                padding: 1em;
+                border-radius: 5px;
+                overflow-x: auto;
+            }
+
+            code {
+                color: #c3e88d;
+                font-family: monospace;
+            }
+
+            ol {
+                padding-left: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="httpservercrowtest">httpServerCrowTest</h1>
+        <p>A simple HTTP server built with C++ and <a href="https://github.com/CrowCpp/Crow">Crow</a>.</p>
+        <p>The goal of this project is to explore the fundamentals of web servers in C++, as part of a personal transition from using TypeScript to C++ in my own projects.</p>
+        <p>Maybe this repository will inspire you to explore C++ for your web development needs too!</p>
+        <h2 id="how-to-run">How to Run</h2>
+        <ol>
+            <li>
+                <p><strong>Install the dependencies</strong><br>You’ll need
+                    <a href="https://github.com/CrowCpp/Crow" target="_blank">Crow</a>, 
+                    <a href="https://think-async.com/Asio/" target="_blank">Asio</a>, 
+                    <a href="https://www.gnu.org/software/make/" target="_blank">Make</a>, and 
+                    <a href="https://gcc.gnu.org/" target="_blank">g++</a> installed on your system.
+                </p>
+            </li>
+            <li>
+                <p><strong>Compile the project</strong></p>
+                <pre><code class="lang-bash"><span class="hljs-attribute"> make</span></code></pre>
+            </li>
+            <li>
+                <p><strong>Start the server</strong></p>
+                <pre><code class="lang-bash">bin/httpServerCrowTest</code></pre>
+            </li>
+        </ol>
+    </body>
+</html>
