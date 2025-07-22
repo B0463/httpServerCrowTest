@@ -23,6 +23,37 @@
                 text-decoration: underline;
             }
 
+            h1 a {
+                text-decoration: none;
+                color: inherit;
+                position: relative;
+                cursor: pointer;
+                transition: color 0.2s ease;
+            }
+
+            h1 a::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 2px;
+                background: currentColor;
+                opacity: 0.2;
+                transform: scaleX(0);
+                transition: transform 0.2s ease;
+                transform-origin: left;
+            }
+
+            h1 a:hover {
+                color: #4ea1f3;
+            }
+
+            h1 a:hover::after {
+                transform: scaleX(1);
+                opacity: 0.4;
+            }
+
             h1, h2, h3 {
                 color: #ffffff;
             }
@@ -45,7 +76,9 @@
         </style>
     </head>
     <body>
-        <h1 id="httpservercrowtest">httpServerCrowTest</h1>
+        <h1 id="httpservercrowtest">
+            <a href="https://github.com/B0463/httpServerCrowTest" target="_blank">httpServerCrowTest</a>
+        </h1>
         <p>A simple HTTP server built with C++ and <a href="https://github.com/CrowCpp/Crow">Crow</a>.</p>
         <p>The goal of this project is to explore the fundamentals of web servers in C++, as part of a personal transition from using TypeScript to C++ in my own projects.</p>
         <p>Maybe this repository will inspire you to explore C++ for your web development needs too!</p>
